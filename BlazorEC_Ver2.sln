@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33712.159
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorEC_Ver2.Server", "BlazorEC_Ver2\Server\BlazorEC_Ver2.Server.csproj", "{86BD8295-7E69-487A-B64B-ADD797350C7B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorEC_Ver2.Server", "BlazorEC_Ver2\Server\BlazorEC_Ver2.Server.csproj", "{86BD8295-7E69-487A-B64B-ADD797350C7B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorEC_Ver2.Client", "BlazorEC_Ver2\Client\BlazorEC_Ver2.Client.csproj", "{82173851-D99F-4E3B-A941-C1AF8DD2E584}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorEC_Ver2.Client", "BlazorEC_Ver2\Client\BlazorEC_Ver2.Client.csproj", "{82173851-D99F-4E3B-A941-C1AF8DD2E584}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorEC_Ver2.Shared", "BlazorEC_Ver2\Shared\BlazorEC_Ver2.Shared.csproj", "{24BB7EEC-00CD-4010-97E4-5D3C3E515D72}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorEC_Ver2.Shared", "BlazorEC_Ver2\Shared\BlazorEC_Ver2.Shared.csproj", "{24BB7EEC-00CD-4010-97E4-5D3C3E515D72}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
