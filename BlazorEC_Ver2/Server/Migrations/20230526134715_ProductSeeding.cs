@@ -9,7 +9,7 @@ namespace BlazorEC_Ver2.Server.Migrations
     /// <inheritdoc />
     public partial class ProductSeeding : Migration
     {
-        /// <inheritdoc />
+        /// <inheritdoc /> 
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.InsertData(
