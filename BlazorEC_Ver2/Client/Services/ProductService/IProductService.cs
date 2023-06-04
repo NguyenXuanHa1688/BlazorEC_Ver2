@@ -6,7 +6,10 @@ namespace BlazorEC_Ver2.Client.Services.ProductService
     {
         event Action ProductsChange;
         List<Product> Products { get; set; }
+        string Message { get; set; }
         Task GetProducts(string? categoryUrl = null);
         Task<ServiceResponse<Product>> GetProduct(int productId);
+        Task SearchProducts(string searchText);
+        Task<List<string>> GetProductSearchSuggestion(string searchText);
     }
 }
