@@ -11,7 +11,7 @@ namespace BlazorEC_Ver2.Client.Services.ProductService
             _http = http;
         }
         public List<Product> Products { get; set; } = new List<Product>();
-        public string Message { get; set; } = "Loading Product";
+        public string Message { get; set; } = "Loading Product ...";
 
         public event Action ProductsChange;
 
@@ -33,14 +33,13 @@ namespace BlazorEC_Ver2.Client.Services.ProductService
 
         public async Task<List<string>> GetProductSearchSuggestion(string searchText)
         {
-            var result = await _http.GetFromJsonAsync<ServiceResponse<List<string>>>($"api/products/searchsuggestion/{searchText}");
+            var result = await _http.GetFromJsonAsync<ServiceResponse<List<string>>>($"api/product/searchsuggestion/{searchText}");
             return result.Data;
         }
 
-        public async Task SearchProducts(string searchText)
+        public async Task SearchProduct(string searchText)
         {
-            var result = await _http
-                .GetFromJsonAsync<ServiceResponse<List<Product>>>($"api/products/search/{searchText}");
+            var result = await _http.GetFromJsonAsync<ServiceResponse<List<Product>>>($"api/product/search/{searchText}");
             if(result != null && result.Data != null)
             {
                 Products = result.Data;

@@ -9,7 +9,7 @@ namespace BlazorEC_Ver2.Client.Services.ProductService
         string Message { get; set; }
         Task GetProducts(string? categoryUrl = null);
         Task<ServiceResponse<Product>> GetProduct(int productId);
-        Task SearchProducts(string searchText);
+        Task SearchProduct(string searchText);
         Task<List<string>> GetProductSearchSuggestion(string searchText);
     }
 }
